@@ -1,7 +1,5 @@
 package curso.esfera.utils;
 
-import static org.mockito.Matchers.anyFloat;
-
 import curso.esfera.modelo.POI;
 
 public class CalculadorDeDistancia {

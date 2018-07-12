@@ -1,0 +1,15 @@
+language: java
+sudo: false
+
+cache:
+  directories:
+  - "$HOME/.m2"
+before_cache:
+- rm -rf $HOME/.m2/repository/io/cucumber
+
+jobs:
+  include:
+  - stage: test
+    jdk: oraclejdk8
+    script: mvn -q verify -Pcheck-semantic-version -DskipTests=true
+    env: CHECK_SEMANTIC_VERSION=true

@@ -11,5 +11,4 @@ jobs:
   include:
   - stage: test
     jdk: oraclejdk8
-    script: mvn -q verify -Pcheck-semantic-version -DskipTests=true
-    env: CHECK_SEMANTIC_VERSION=true
+    script: mvn clean verify

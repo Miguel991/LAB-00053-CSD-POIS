@@ -35,9 +35,9 @@ public class CalcularDistanciaEntreDosPOITest {
 
 		POI ubicacionActual = new POI(latitudActual, longitudActual, "Grupo Esfera", "Consultora");
 
-		int distancia = CalculadorDeDistancia.calcularDistancia(ubicacionActual, poi);
+		double distancia = CalculadorDeDistancia.calcularDistancia(ubicacionActual, poi);
 
-		Assert.assertEquals(2.69, distancia, 0.5);
+		Assert.assertEquals(2.69d, distancia, 0.5);
 
 	}
 

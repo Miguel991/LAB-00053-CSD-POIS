@@ -21,8 +21,15 @@ public class CapaEjemplo {
 		Capa cafeterias = new Capa("cafeterias");
 		cafeterias.setPOIs(crearCapaCafeterias());
 
+		Capa hospitales = new Capa("hospitales");
+		hospitales.agregar(new POI(-34.608379,-58.395596,"Clínica AMEBPBA","Hospital"));
+		hospitales.agregar(new POI(-34.608379,-58.395596,"Clínica AMEBPBA planta baja","Hospital"));
+		hospitales.agregar(new POI(-34.607915,-58.394529,"Sagrado Corazón","Hospital"));
+		hospitales.agregar(new POI(-34.607088,-58.397204,"Arrauz Otorrino Centro","Hospital"));
+		
 		capas.put(pizzerias.getNombre(), pizzerias);
 		capas.put(cafeterias.getNombre(), cafeterias);
+		capas.put(hospitales.getNombre(), hospitales );
 	}
 
 	public static CapaEjemplo getInstance(){

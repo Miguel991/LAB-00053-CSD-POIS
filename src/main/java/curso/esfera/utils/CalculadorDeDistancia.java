@@ -30,15 +30,15 @@ public class CalculadorDeDistancia {
 		return distanciaReal;
 	}
 	
-	public static int calcularDistancia(POI poi, POI ubicacionActual) {
+	public static double calcularDistancia(POI poi, POI ubicacionActual) {
 		
 		double distancia = Math.sqrt((Math.pow((poi.getLatitud()-ubicacionActual.getLatitud()),2) 
 				           + Math.pow((poi.getLongitud()-ubicacionActual.getLongitud()),2)));
 		
 		
-		Double a = distancia/1000;
+		Double a = distancia*1000;
 		
-		return a.intValue();
+		return a;
 		
 	}
 	

@@ -9,12 +9,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import ar.com.curso.poi.modelo.POI;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
-import curso.esfera.modelo.POI;
 
 public class POIMasCercanoStepDef {
 	
@@ -25,9 +25,8 @@ public class POIMasCercanoStepDef {
 		
 		listaDePoisEsperados = new ArrayList<POI>();
 		
-		listaDePoisEsperados.add(new POI(-34.608379,-58.395596,"Clínica AMEBPA","Hospital"));
-		listaDePoisEsperados.add(new POI(-34.608379,-58.395596,"Clínica AMEBPA planta baja","Hospital"));
-		
+		listaDePoisEsperados.add(new POI(-34.608379,-58.395596,"Clínica AMEBPBA","Hospital"));
+		listaDePoisEsperados.add(new POI(-34.608379,-58.395596,"Clínica AMEBPBA planta baja","Hospital"));
 	}
 
 	private String url;

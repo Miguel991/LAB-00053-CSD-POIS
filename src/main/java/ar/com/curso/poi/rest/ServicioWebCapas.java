@@ -31,6 +31,16 @@ public class ServicioWebCapas {
 		return servicioPOI.obtenerPOIs(nombreServicio);
 	}
 	
+//	@GET
+//	@Path("/pois")
+//	@Produces("application/xml")
+//	public POI getPOI(@PathParam("nombreServicio") String nombreServicio) {
+//		
+//		return new POI(12d,12d,"poi-test","2");
+//	}
+	
+	
+	
 	@GET
 	@Path("/poiMasCercano/{nombreServicio}/{latitud}/{longitud}")
 	@Produces("application/xml")
